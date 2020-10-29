@@ -1,0 +1,1022 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Google Maps - pygmaps </title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=true_or_false&key=AIzaSyA0VLK6IbDGJ7XP66srkPqPL3W-R4oPxDw"></script>
+<script type="text/javascript">
+	function initialize() {
+		var centerlatlng = new google.maps.LatLng(-1.288910, 36.862990);
+		var myOptions = {
+			zoom: 10,
+			center: centerlatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+		var latlng = new google.maps.LatLng(-1.171979, 36.829653);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kiambu County Referal Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.141180, 36.926950);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Ruiru Sub-County Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.222340, 36.721290);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Wangige Sub-County Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.110600, 36.641010);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Limuru Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.127590, 36.668370);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Tigoni District Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.186290, 36.684630);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Nyathuna Level 4 Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.041480, 37.076280);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Thika Level 5 Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.086970, 37.020150);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Gachororo Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.062340, 37.108820);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Makongeni Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.973630, 36.928420);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Igegania Sub-District Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.214130, 36.660360);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Gichuru Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.191750, 36.793200);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Gathanga Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.153480, 36.596820);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Ndeiya Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.016728, 36.909929);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Gatundu District Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.288910, 36.862990);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Bahati Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.295530, 36.846230);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kaloleni Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.298240, 36.862790);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mbotela Clinic",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.295870, 36.866230);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "ofafa I Clinic",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.283510, 36.880020);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Maringo Clinic",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.305930, 36.787880);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kibera D O Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.315311, 36.789084);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kibera South Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.320920, 36.705950);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Karen Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.306180, 36.914720);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Embakasi Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.310990, 36.887283);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kware Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.316010, 36.869470);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Reuben Mukuru Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.334960, 36.876620);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mukuru Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.341110, 36.754370);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Dreams Centre Dispensary (Langata)",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.575480, 34.559430);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Bungoma County Referral Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.661310, 34.752780);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Lugulu Friends Mission Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.788320, 34.960800);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Tongaren Model Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.565223, 34.658400);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Mechimeru Model Health Center",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.669255, 34.528100);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mayanja Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.608510, 34.654680);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Bukembe Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.646570, 34.560120);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kabuchai Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.655330, 34.588420);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Nalondo Health Centre (Model)",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.613020, 34.755578);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Webuye Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.710260, 34.661710);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Bokoli Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.843140, 34.993040);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Ndalu Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.790720, 35.052900);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Makutano Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.652320, 34.690600);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Sinoko Dispensary (Bungoma East)",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.607290, 34.771960);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Webuye Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.612990, 34.764560);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Mihuu Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.789170, 34.700610);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kimilili Subcounty Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.821350, 34.796940);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Makhonge Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.466180, 34.655460);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Khalala Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.521770, 34.430740);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Lunakwe Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.604421, 34.407519);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kimaeti Health centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.637559, 34.491559);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Miluki Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.484110, 34.402310);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Khasoko Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.983601, 34.826991);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Nasianda Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.499647, 34.515057);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Talitia Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.556280, 34.501140);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Muanda Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.578271, 34.465024);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mwomo Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.586889, 34.442898);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Machwele Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.584938, 34.482621);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kibuke Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.670621, 34.490001);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mukwa Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.643364, 34.412235);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kitabisi Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.819819, 34.745100);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Nasusi Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.780260, 34.790050);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kamukuywa Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.782260, 34.751820);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Maeni Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.753920, 34.699580);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Bituyu Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.738940, 34.749280);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Bahai Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.779342, 34.676922);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kibingei Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.796130, 34.665770);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Chebukwabi Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.813550, 34.727530);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "kamasielo dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.691712, 34.961967);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "kambini dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.833550, 34.777530);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Sulwe Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(0.814710, 34.740790);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kamusinde Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.783630, 37.628430);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Makueni County Referral Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.645010, 37.472210);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Mbooni Sub County Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.766260, 37.556280);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Kilala Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.786140, 37.360640);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Kilungu Sub County Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.630770, 37.468310);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Ebenezer Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-2.597590, 38.077120);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kambu Model Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.627840, 37.557710);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kisau Sub County Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-2.071990, 37.769670);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mbuvo Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.915330, 37.729720);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kathonzweni Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-2.074370, 37.461380);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Emali Model Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-2.017140, 37.463350);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Matiku Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-2.055780, 37.540180);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Tutini Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-2.209990, 37.723670);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kiboko Dispensary (Makindu)",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-2.203820, 37.900910);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kamboo Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-2.529460, 38.049650);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Ngwata Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-2.103730, 37.761180);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kalii Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.842101, 37.400341);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kyang'a Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.848200, 37.421620);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kyambeke Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.859470, 37.434520);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mwaani Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.715870, 37.159850);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Murang'a District Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.789140, 37.127540);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Maragua District Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.896720, 37.187530);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Makuyu Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.929360, 36.943140);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kirwara Sub District",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.862800, 36.862060);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Gatura Healh Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.784770, 36.867890);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kangari Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.689620, 36.971450);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Kangema Sub-District Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.686020, 36.882900);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Kanyenyaini Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.711780, 37.029470);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Kirogo Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.743150, 36.973060);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Muriranjas Sub-District Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.639430, 36.957460);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Nyakianga Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.011990, 37.228990);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Ngelelya Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.985005, 37.330900);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Assumption of Mary Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.960560, 36.991500);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Gatunyu Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-1.027310, 37.154150);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mitubiri Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.826860, 36.913380);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Githumu Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.671090, 37.066070);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Nyagiti Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.845560, 37.178970);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kamahuha Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.777650, 37.208750);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Maragua Ridge Health Centre",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.602480, 36.952970);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kiria-Ini Mission Hospital",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.704470, 36.838700);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Ichichi Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.602633, 36.955418);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Mathioya Medical Clinic",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.929530, 36.942810);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Kirwara Health Clinic",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(-0.938770, 36.962320);
+		var img = new google.maps.MarkerImage('/home/hillux/projects/jacaranda/local/lib/python2.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Gatanga Dispensary",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+	}
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+	<div id="map_canvas" style="width: 100%; height: 100%;"></div>
+</body>
+</html>
